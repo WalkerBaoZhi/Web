@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单&选择框&按钮</title>
+</head>
+<body>
+    <h1>表单</h1>
+    <br>
+
+    <h1>制造输入框</h1>
+    <form action="/submit" method="post">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" maxlength="16" minlength="4" required><br><br>
+        参数说明: <br>
+        <ul>
+            <li>name 名称</li>
+            <li>id 唯一ID</li>
+            <li>maxlength 最大长度</li>
+            <li>minlength 最小长度</li>
+            <li>required 必填项</li>
+        </ul>
+        <label for="email">邮箱:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">电话号码:</label>
+        <input type="tel" id="number" name="number" required><br><br>
+
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="提交">
+    </form>
+    <hr>
+    <textarea name="大大的文本输入框" id="textarea"></textarea><br><br>
+
+    <label for="选择一个动物">选择一个动物:</label>
+    <select name="animal" id="animal">
+        <option value="dog">狗</option>
+        <option value="cat">猫</option>
+        <option value="bird">鸟</option>
+    </select><br><br>
+
+    <button>点击按钮获得114514金币</button>
+</body>
+</html>
